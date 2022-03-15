@@ -1,5 +1,6 @@
 <?php
 $header_navbar = config('header_navbar');
+$cards = config('comics');
 
 ?>
 
@@ -11,6 +12,10 @@ $header_navbar = config('header_navbar');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('../css/app.css') }}">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Comics</title>
 </head>
 
@@ -23,7 +28,7 @@ $header_navbar = config('header_navbar');
                 <ul>
                     <li><img src="{{ asset('images/dc-logo.png') }}" alt=""></li>
                     @foreach ($header_navbar as $link)
-                        <li>{{ $link }}</li>
+                    <li>{{ $link }}</li>
                     @endforeach
                 </ul>
             </div>
@@ -34,14 +39,20 @@ $header_navbar = config('header_navbar');
     </header>
     <main>
         <div class="container">
-
             <div class="cards">
-                carte
+                @foreach($cards as $card)
+                <div class="card">
+                    <img src="{{ $card['thumb'] }}" alt="">
+                    <h4>{{ $card['series'] }}</h4>
+                </div>
+                @endforeach
             </div>
-            <nav>
-                nav
-            </nav>
+            <a href="#">LOAD MORE</a>
+
         </div>
+        <nav>
+
+        </nav>
     </main>
     <footer>
         footer
