@@ -26,9 +26,26 @@ main {
         font-size: 12px;
         font-weight: 600;
     }
-    nav {
-        margin-top: 50px;
-        height: 100px;
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 30px 0;
         background-color: $light_blue;
+        margin-top: 50px;
+        .menu-card {
+            display: flex;
+            align-items: center;
+            font-size: 0.8rem;
+            margin-right: 60px;
+            h4 {
+                margin-left: 10px;
+            }
+            img {
+                height: 40px;
+            }
+        }
     }
 }
