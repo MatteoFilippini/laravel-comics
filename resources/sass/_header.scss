@@ -1,17 +1,26 @@
-header{
-    nav{     
-        img{
+header {
+    nav {
+        img {
             max-width: 100%;
-            height:auto;
-        } 
-        ul{
-            display:flex;
-            align-items: center; 
-            li{
+            height: auto;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            li:first-child {
+                margin-right: 60px;
+            }
+            li {
                 list-style: none;
                 display: inline;
                 margin-left: 20px;
             }
         }
+    }
+    #jumbotron {
+        height: 300px;
+        background-image: url(../images/jumbotron.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

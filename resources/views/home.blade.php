@@ -20,11 +20,10 @@ $header_navbar = config('header_navbar');
     <header>
         <nav>
             <div class="container">
-
                 <ul>
-                    <li><img src="{{asset('images/dc-logo.png') }}" alt=""></li>
+                    <li><img src="{{ asset('images/dc-logo.png') }}" alt=""></li>
                     @foreach ($header_navbar as $link)
-                    <li>{{ $link }}</li>
+                        <li>{{ $link }}</li>
                     @endforeach
                 </ul>
             </div>
