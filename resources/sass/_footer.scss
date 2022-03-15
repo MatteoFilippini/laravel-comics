@@ -1,0 +1,31 @@
+footer {
+    background-color: rgb(48, 48, 48);
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    li {
+        list-style-type: none;
+        padding: 20px 10px;
+        a {
+            color: $light_blue;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+    img {
+        font-size: 30px;
+    }
+
+    .btn-sign p {
+        border: 1px solid $light_blue;
+        padding: 7px;
+        cursor: pointer;
+    }
+}

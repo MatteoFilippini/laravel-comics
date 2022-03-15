@@ -74,7 +74,36 @@ $cards = config('comics');
         </div>
     </main>
     <footer>
-        footer
+        <div class="container">
+            <nav>
+                <div class="btn-sign">
+                    <p>SIGN IN</p>
+                </div>
+                <div class="footer-icons">
+                    <ul>
+                        <li>
+                            <a href="#">FOLLOW US</a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-facebook.png') }}" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-twitter.png') }}" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-youtube.png') }}" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-pinterest.png') }}" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{ asset('images/footer-periscope.png') }}" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
     </footer>
 </body>
 

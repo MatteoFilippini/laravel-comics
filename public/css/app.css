@@ -72,8 +72,43 @@ main .menu .menu-card img {
   height: 40px;
 }
 
+footer {
+  background-color: #303030;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+}
+footer li {
+  list-style-type: none;
+  padding: 20px 10px;
+}
+footer li a {
+  color: #0282f9;
+  font-weight: 600;
+  text-decoration: none;
+}
+footer img {
+  font-size: 30px;
+}
+footer .btn-sign p {
+  border: 1px solid #0282f9;
+  padding: 7px;
+  cursor: pointer;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
 }
