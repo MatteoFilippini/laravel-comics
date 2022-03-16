@@ -13,17 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/main', function () {
+//     return view('layout.home');
+// })->name('home');
+
 Route::get('/', function () {
-
-    return view('layout.home');
-});
-
-Route::get('/main', function () {
     $cards = config('comics');
     return view('main', compact('cards'));
-});
+})->name('home');
 
-Route::get('/single', function () {
+// Route::get('/single', function () {
+//     $cards = config('comics');
+//     return view('single', compact('cards'));
+// })->name('single');
+
+Route::get('/single/{id}', function ($id) {
     $cards = config('comics');
+    $cards = $cards[$id];
     return view('single', compact('cards'));
-});
+})->name('single');

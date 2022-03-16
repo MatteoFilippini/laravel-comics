@@ -1,4 +1,4 @@
-@extends('layout.home');
+@extends('layout.home')
 
 @section('content')
 <div class="single">
@@ -7,10 +7,10 @@
         <div class="container">
             <div class="info">
                 <div class="desc">
-                    <h2>{{ $cards[0]['title'] }}</h2>
+                    <h2>{{ $cards['title'] }}</h2>
                     <div class="banner">
                         <div class="price">
-                            <p>U.S. Price {{ $cards[0]['price'] }}</p>
+                            <p>U.S. Price {{ $cards['price'] }}</p>
                             <span>AVAIBLE</span>
                         </div>
                         <div class="check">
@@ -18,38 +18,48 @@
                         </div>
                     </div>
                     <p>
-                        {{ $cards[0]['description'] }}
+                        {{ $cards['description'] }}
                     </p>
                 </div>
                 <figure>
-                    <img src="{{ $cards[0]['thumb'] }}" alt="">
+                    <img src="{{ $cards['thumb'] }}" alt="">
                 </figure>
             </div>
             <div class="spec">
                 <div class="talent">
                     <h3>Talent</h3>
+                    <!-- dobbiamo fare un iclio sugli artisti -->
                     <div class="people">
                         <div class="name">Art by</div>
-                        <div class="names">{{ $cards[0]['artists'][0] }} {{ $cards[0]['artists'][1] }}</div>
+                        <div class="names">
+                            @foreach($cards['artists'] as $artist)
+                            <span>{{ $artist }}</span>
+                            @endforeach
+                        </div>
                     </div>
+                    <!-- dobbiamo fare un iclio sugli scrittori -->
                     <div class="people">
                         <div class="name">Written by</div>
-                        <div class="names">{{ $cards[0]['writers'][0] }} {{ $cards[0]['writers'][1] }}</div>
+                        <div class="names">
+                            @foreach($cards['writers'] as $writer)
+                            <span>{{ $writer }}</span>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
                 <div class="talent">
                     <h3>Specs</h3>
                     <div class="people">
                         <div class="name">Series</div>
-                        <div class="names">{{ $cards[0]['series']  }}</div>
+                        <div class="names">{{ $cards['series']  }}</div>
                     </div>
                     <div class="people">
                         <div class="name">U.S. Price</div>
-                        <div class="names" style="color:black">{{ $cards[0]['price']  }}</div>
+                        <div class="names" style="color:black">{{ $cards['price']  }}</div>
                     </div>
                     <div class="people">
                         <div class="name">On Sale Date:</div>
-                        <div class="names" style="color:black">{{ $cards[0]['sale_date']  }}</div>
+                        <div class="names" style="color:black">{{ $cards['sale_date']  }}</div>
                     </div>
                 </div>
             </div>

@@ -13,6 +13,11 @@ header nav ul li {
   list-style: none;
   display: inline;
   margin-left: 20px;
+  cursor: pointer;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 header #jumbotron {
   height: 400px;
@@ -41,7 +46,7 @@ header #jumbotron {
   color: #fff;
   text-transform: uppercase;
 }
-.wrapper a {
+.wrapper #btn {
   background-color: #0282f9;
   padding: 8px 18px;
   align-items: center;

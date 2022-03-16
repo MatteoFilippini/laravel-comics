@@ -6,14 +6,15 @@
 <div class="wrapper">
     <div class="container">
         <div class="cards">
-            @foreach($cards as $card)
+            @foreach($cards as $index => $card)
             <div class="card">
-                <img src="{{ $card['thumb'] }}" alt="">
+                <!-- qui vado alla pagina single passandolgi l'id -->
+                <a href="{{ route('single',['id' => $index]) }}"><img src="{{ $card['thumb'] }}" alt=""></a>
                 <h4>{{ $card['series'] }}</h4>
             </div>
             @endforeach
         </div>
-        <a href="#">LOAD MORE</a>
+        <a href="#" id="btn">LOAD MORE</a>
     </div>
     <div class="menu">
         <div class="menu-card">
