@@ -1,0 +1,40 @@
+.bg-blue {
+    height: 50px;
+    background-color: $light_blue;
+}
+
+.bg-white {
+    .info {
+        display: flex;
+        justify-content: center;
+        .desc {
+            flex-basis: 70%;
+            h2 {
+                color: $light_blue;
+            }
+            .banner {
+                height: 50px;
+                background-color: rgb(85, 186, 89);
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .price {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 20px;
+                    flex-grow: 1;
+                }
+                .check {
+                    padding: 0 20px;
+                    border-left: 1px solid black;
+                }
+            }
+        }
+        img {
+            height: 200px;
+            width: 200px;
+        }
+    }
+}

@@ -21,27 +21,27 @@ header #jumbotron {
   background-size: cover;
 }
 
-main {
+.wrapper {
   background-color: #1c1c1c;
   padding: 50px 0 0 0;
 }
-main .cards {
+.wrapper .cards {
   display: flex;
   flex-wrap: wrap;
 }
-main .cards .card {
+.wrapper .cards .card {
   flex-basis: 15%;
   margin-left: 20px;
 }
-main .cards .card img {
+.wrapper .cards .card img {
   width: 180px;
   height: 180px;
 }
-main .cards .card h4 {
+.wrapper .cards .card h4 {
   color: #fff;
   text-transform: uppercase;
 }
-main a {
+.wrapper a {
   background-color: #0282f9;
   padding: 8px 18px;
   align-items: center;
@@ -50,7 +50,7 @@ main a {
   font-size: 12px;
   font-weight: 600;
 }
-main .menu {
+.wrapper .menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,16 +59,16 @@ main .menu {
   background-color: #0282f9;
   margin-top: 50px;
 }
-main .menu .menu-card {
+.wrapper .menu .menu-card {
   display: flex;
   align-items: center;
   font-size: 0.8rem;
   margin-right: 60px;
 }
-main .menu .menu-card h4 {
+.wrapper .menu .menu-card h4 {
   margin-left: 10px;
 }
-main .menu .menu-card img {
+.wrapper .menu .menu-card img {
   height: 40px;
 }
 
@@ -124,4 +124,43 @@ main .menu .menu-card img {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+.bg-blue {
+  height: 50px;
+  background-color: #0282f9;
+}
+
+.bg-white .info {
+  display: flex;
+  justify-content: center;
+}
+.bg-white .info .desc {
+  flex-basis: 70%;
+}
+.bg-white .info .desc h2 {
+  color: #0282f9;
+}
+.bg-white .info .desc .banner {
+  height: 50px;
+  background-color: #55ba59;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bg-white .info .desc .banner .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+.bg-white .info .desc .banner .check {
+  padding: 0 20px;
+  border-left: 1px solid black;
+}
+.bg-white .info img {
+  height: 200px;
+  width: 200px;
 }

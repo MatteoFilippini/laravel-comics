@@ -1,7 +1,5 @@
 <?php
 $header_navbar = config('header_navbar');
-// $cards = config('comics');
-
 ?>
 
 <!DOCTYPE html>
