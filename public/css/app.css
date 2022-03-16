@@ -135,9 +135,6 @@ header #jumbotron {
   display: flex;
   justify-content: center;
 }
-.bg-white .info .desc {
-  flex-basis: 70%;
-}
 .bg-white .info .desc h2 {
   color: #0282f9;
 }
@@ -167,7 +164,6 @@ header #jumbotron {
 .bg-white .spec {
   display: flex;
   justify-content: center;
-  background-color: #f6f6f6;
   margin-bottom: 90px;
 }
 .bg-white .spec h3 {
@@ -188,4 +184,26 @@ header #jumbotron {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   padding: 10px 0;
+}
+.bg-white .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  margin-top: 50px;
+}
+.bg-white .menu .menu-card {
+  display: flex;
+  font-size: 0.8rem;
+  border: 1px solid gray;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.bg-white .menu .menu-card h4 {
+  margin-left: 10px;
+  align-self: flex-start;
+}
+.bg-white .menu .menu-card img {
+  height: 40px;
+  background-color: gray;
 }

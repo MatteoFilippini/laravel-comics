@@ -53,6 +53,28 @@
                     </div>
                 </div>
             </div>
+            <div class="menu">
+                <div class="menu-card">
+                    <h4>DIGITAL COMICS</h4>
+                    <img src="{{ asset('images/buy-comics-digital-comics.png') }}" alt="" />
+                </div>
+                <div class="menu-card">
+                    <h4>DC MERCHANDISE</h4>
+                    <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt="" />
+                </div>
+                <div class="menu-card">
+                    <h4>SUBSCRIPTION</h4>
+                    <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt="" />
+                </div>
+                <div class="menu-card">
+                    <h4>COMICS SHOP LOCATOR</h4>
+                    <img src="{{ asset('images/buy-comics-shop-locator.png') }}" alt="" />
+                </div>
+                <div class="menu-card">
+                    <h4>DC POWER VISA</h4>
+                    <img src="{{ asset('images/buy-dc-power-visa.svg') }}" alt="" />
+                </div>
+            </div>
         </div>
     </div>
 </div>
