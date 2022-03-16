@@ -28,17 +28,29 @@
             <div class="spec">
                 <div class="talent">
                     <h3>Talent</h3>
-                    <div class="arts">
+                    <div class="people">
                         <div class="name">Art by</div>
                         <div class="names">{{ $cards[0]['artists'][0] }} {{ $cards[0]['artists'][1] }}</div>
                     </div>
-                    <div class="writers">
+                    <div class="people">
                         <div class="name">Written by</div>
                         <div class="names">{{ $cards[0]['writers'][0] }} {{ $cards[0]['writers'][1] }}</div>
                     </div>
                 </div>
-                <div class="spec-series">
+                <div class="talent">
                     <h3>Specs</h3>
+                    <div class="people">
+                        <div class="name">Series</div>
+                        <div class="names">{{ $cards[0]['series']  }}</div>
+                    </div>
+                    <div class="people">
+                        <div class="name">U.S. Price</div>
+                        <div class="names" style="color:black">{{ $cards[0]['price']  }}</div>
+                    </div>
+                    <div class="people">
+                        <div class="name">On Sale Date:</div>
+                        <div class="names" style="color:black">{{ $cards[0]['sale_date']  }}</div>
+                    </div>
                 </div>
             </div>
         </div>
