@@ -164,3 +164,28 @@ header #jumbotron {
   height: 200px;
   width: 200px;
 }
+.bg-white .spec {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.bg-white .spec h3 {
+  color: #0282f9;
+}
+.bg-white .spec .talent,
+.bg-white .spec .spec-series {
+  flex-basis: 50%;
+}
+.bg-white .spec .talent .name,
+.bg-white .spec .spec-series .name {
+  flex-basis: 30%;
+}
+.bg-white .spec .names {
+  color: #0282f9;
+}
+.bg-white .spec .talent .arts,
+.bg-white .spec .talent .writers {
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}

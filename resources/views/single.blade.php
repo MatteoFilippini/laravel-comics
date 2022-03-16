@@ -25,6 +25,22 @@
                     <img src="{{ $cards[0]['thumb'] }}" alt="">
                 </figure>
             </div>
+            <div class="spec">
+                <div class="talent">
+                    <h3>Talent</h3>
+                    <div class="arts">
+                        <div class="name">Art by</div>
+                        <div class="names">{{ $cards[0]['artists'][0] }} {{ $cards[0]['artists'][1] }}</div>
+                    </div>
+                    <div class="writers">
+                        <div class="name">Written by</div>
+                        <div class="names">{{ $cards[0]['writers'][0] }} {{ $cards[0]['writers'][1] }}</div>
+                    </div>
+                </div>
+                <div class="spec-series">
+                    <h3>Specs</h3>
+                </div>
+            </div>
         </div>
     </div>
 </div>
