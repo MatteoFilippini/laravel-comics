@@ -1,23 +1,53 @@
 header {
+    .additional {
+        height: 20px;
+        background-color: $light_blue;
+        color: white;
+        font-size: 10px;
+        line-height: 20px;
+        text-align: end;
+    }
     nav {
-        img {
-            max-width: 100%;
-            height: 60px;
-        }
-        ul {
+        padding: 10px 0;
+        .row {
             display: flex;
             align-items: center;
-            li:first-child {
-                margin-right: 60px;
+            justify-content: space-between;
+            img {
+                max-width: 100%;
+                height: 60px;
             }
-            li {
-                list-style: none;
-                display: inline;
-                margin-left: 20px;
-                cursor: pointer;
-                a {
-                    text-decoration: none;
-                    color: black;
+            ul {
+                display: flex;
+                align-items: center;
+                li:first-child:hover {
+                    border-bottom: 0;
+                }
+                li:first-child {
+                    margin-right: 50px;
+                }
+                li {
+                    list-style: none;
+                    display: inline;
+                    margin-left: 20px;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            ul > li:hover {
+                color: $light_blue;
+                border-bottom: 3px solid;
+            }
+            .searchbar {
+                border-bottom: 2px solid $light_blue;
+                width: 80px;
+                text-align: end;
+                input {
+                    border: 0;
+                    width: 80px;
                 }
             }
         }

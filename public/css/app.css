@@ -1,23 +1,55 @@
-header nav img {
+header .additional {
+  height: 20px;
+  background-color: #0282f9;
+  color: white;
+  font-size: 10px;
+  line-height: 20px;
+  text-align: end;
+}
+header nav {
+  padding: 10px 0;
+}
+header nav .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .row img {
   max-width: 100%;
   height: 60px;
 }
-header nav ul {
+header nav .row ul {
   display: flex;
   align-items: center;
 }
-header nav ul li:first-child {
-  margin-right: 60px;
+header nav .row ul li:first-child:hover {
+  border-bottom: 0;
 }
-header nav ul li {
+header nav .row ul li:first-child {
+  margin-right: 50px;
+}
+header nav .row ul li {
   list-style: none;
   display: inline;
   margin-left: 20px;
   cursor: pointer;
 }
-header nav ul li a {
+header nav .row ul li a {
   text-decoration: none;
   color: black;
+}
+header nav .row ul > li:hover {
+  color: #0282f9;
+  border-bottom: 3px solid;
+}
+header nav .row .searchbar {
+  border-bottom: 2px solid #0282f9;
+  width: 80px;
+  text-align: end;
+}
+header nav .row .searchbar input {
+  border: 0;
+  width: 80px;
 }
 header #jumbotron {
   height: 400px;
@@ -29,6 +61,16 @@ header #jumbotron {
 .wrapper {
   background-color: #1c1c1c;
   padding: 50px 0 0 0;
+  position: relative;
+}
+.wrapper .btn {
+  background-color: #0282f9;
+  padding: 8px 20px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
 }
 .wrapper .cards {
   display: flex;
@@ -37,6 +79,7 @@ header #jumbotron {
 .wrapper .cards .card {
   flex-basis: 15%;
   margin-left: 20px;
+  margin-bottom: 30px;
 }
 .wrapper .cards .card img {
   width: 180px;
@@ -45,24 +88,28 @@ header #jumbotron {
 .wrapper .cards .card h4 {
   color: #fff;
   text-transform: uppercase;
+  font-size: 14px;
 }
 .wrapper #btn {
   background-color: #0282f9;
-  padding: 8px 18px;
-  align-items: center;
+  padding: 8px 40px;
   color: #fff;
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
+  position: absolute;
+  right: 45%;
 }
 .wrapper .menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
-  padding: 30px 0;
   background-color: #0282f9;
   margin-top: 50px;
+}
+.wrapper .menu .container {
+  padding: 30px 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 .wrapper .menu .menu-card {
   display: flex;
@@ -82,25 +129,65 @@ header #jumbotron {
   background-image: url(../images/footer-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
 }
-.footer-list .footer-list-cont:last-child {
+.footer-list .container {
+  display: flex;
+  height: 100%;
+}
+.footer-list .container .fotter-list-cont {
+  flex-basis: 50%;
+}
+.footer-list .container .fotter-list-cont.image {
   background-image: url(../images/dc-logo-bg.png);
   background-repeat: no-repeat;
-  background-position: center;
 }
-.footer-list .fotter-list-cont {
-  flex-basis: 50%;
+.footer-list .container .fotter-list-cont.ls {
+  display: flex;
+  flex-direction: column;
+}
+.footer-list .container .fotter-list-cont.ls .t-list {
+  width: 100%;
+  height: 80%;
+  display: flex;
+}
+.footer-list .container .fotter-list-cont.ls .t-list .list {
+  flex-basis: 20%;
+  padding: 50px 0;
+}
+.footer-list .container .fotter-list-cont.ls .t-list .list ul {
+  margin-bottom: 20px;
+}
+.footer-list .container .fotter-list-cont.ls .t-list .list ul li:first-child {
+  text-transform: uppercase;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.footer-list .container .fotter-list-cont.ls .t-list .list ul li {
+  color: gray;
+  list-style: none;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.footer-list .container .fotter-list-cont.ls .b-list {
+  width: 100%;
+  height: 20%;
+  font-size: 12px;
+  color: gray;
+}
+.footer-list .container .fotter-list-cont.ls .b-list span {
+  color: #0282f9;
+  cursor: pointer;
 }
 
 .footer-icons {
   background-color: #303030;
 }
-.footer-icons nav {
+.footer-icons .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
 }
 .footer-icons ul {
   display: flex;
@@ -131,17 +218,40 @@ header #jumbotron {
   margin: 0 auto;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
 .bg-blue {
   height: 50px;
   background-color: #0282f9;
+  position: relative;
+}
+.bg-blue .card-s {
+  width: 150px;
+  position: absolute;
+  bottom: 50%;
+}
+.bg-blue .card-s img {
+  height: auto;
+  max-width: 100%;
 }
 
 .bg-white .info {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
-.bg-white .info .desc h2 {
-  color: #0282f9;
+.bg-white .info h2 {
+  color: #1b3644;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.bg-white .info .desc {
+  margin-right: 30px;
 }
 .bg-white .info .desc .banner {
   height: 50px;
@@ -150,6 +260,7 @@ header #jumbotron {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .bg-white .info .desc .banner .price {
   display: flex;
@@ -162,9 +273,13 @@ header #jumbotron {
   padding: 0 20px;
   border-left: 1px solid black;
 }
+.bg-white .info .desc .cont {
+  font-size: 14px;
+  color: darkgray;
+}
 .bg-white .info img {
-  height: 200px;
-  width: 200px;
+  height: 220px;
+  width: 220px;
 }
 .bg-white .spec {
   display: flex;
@@ -172,23 +287,28 @@ header #jumbotron {
   margin-bottom: 90px;
 }
 .bg-white .spec h3 {
-  color: #0282f9;
+  color: #1b3644;
+  margin-bottom: 20px;
 }
 .bg-white .spec .talent {
   flex-basis: 50%;
   padding: 0 10px;
 }
 .bg-white .spec .talent .name {
-  flex-basis: 30%;
+  flex-basis: 50%;
+  color: #1b3644;
+  font-size: 14px;
 }
-.bg-white .spec .names {
-  color: #0282f9;
+.bg-white .spec .talent span {
+  font-size: 12px;
 }
 .bg-white .spec .talent .people {
   display: flex;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
   padding: 10px 0;
+  border-bottom: 1px solid #9c9c9c;
+}
+.bg-white .spec .names {
+  color: #0282f9;
 }
 .bg-white .menu {
   display: flex;
@@ -203,6 +323,7 @@ header #jumbotron {
   border: 1px solid gray;
   flex-grow: 1;
   justify-content: space-between;
+  padding: 10px;
 }
 .bg-white .menu .menu-card h4 {
   margin-left: 10px;

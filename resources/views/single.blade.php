@@ -2,7 +2,14 @@
 
 @section('content')
 <div class="single">
-    <div class="bg-blue"></div>
+    <div class="bg-blue">
+        <div class="container">
+            <div class="card-s">
+                <img src="{{ $cards['thumb'] }}" alt="">
+            </div>
+        </div>
+
+    </div>
     <div class="bg-white">
         <div class="container">
             <div class="info">
@@ -17,9 +24,9 @@
                             <span>Check Availability</span>
                         </div>
                     </div>
-                    <p>
+                    <div class="cont">
                         {{ $cards['description'] }}
-                    </p>
+                    </div>
                 </div>
                 <figure>
                     <img src="{{ $cards['thumb'] }}" alt="">
@@ -28,7 +35,6 @@
             <div class="spec">
                 <div class="talent">
                     <h3>Talent</h3>
-                    <!-- dobbiamo fare un iclio sugli artisti -->
                     <div class="people">
                         <div class="name">Art by</div>
                         <div class="names">
@@ -37,7 +43,7 @@
                             @endforeach
                         </div>
                     </div>
-                    <!-- dobbiamo fare un iclio sugli scrittori -->
+
                     <div class="people">
                         <div class="name">Written by</div>
                         <div class="names">
